@@ -1,5 +1,4 @@
-**Tugas 1**
-
+##Tugas 1
 Referensi : Topik 1 Sejarah OS
 1. Apa hubungan antara perangkat lunak aplikasi dan sistem operasi?
 - Sistem operasi adalah wadah untuk menjalankan perangkat lunak aplikasi
@@ -76,9 +75,7 @@ Generasi sebelumnya :
 - Perangkat lunak aplikasi adalah perangkat lunak yang memiliki fungsi khusus dalam membantu pengguna, contoh:  Browser, Microsoft Office, Aplikasi desain, dll
 
 
-
-**Tugas 2**
-
+##Tugas 2
 Boot Process :
 ![boot process lutfi zadeh filoshof](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/8727f5df-1126-459e-8436-f0210f79f8c9)
 1- Setelah menyalakan mesin, BIOS (atau EFI) mendapatkan kendali prosesor. BIOS membaca Master Boot Record dari Hard disk ke memori fisik dan mengatur register mikroprosesor untuk melompat ke Kode Master Boot Record.
@@ -136,9 +133,7 @@ Bench
 Menggunakan benchmark versi 17.01.64
 
 
-
-**Tugas 3**
-
+##Tugas 3
 Mindmap Sejarah, Cara Kerja, dan Fungsi-fungsi Sistem Operasi
 ![Mind Map sistem operasi](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/46e45d27-be69-4d32-90c3-1988f98e8623)
 
