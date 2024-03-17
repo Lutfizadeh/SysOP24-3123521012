@@ -1,4 +1,7 @@
-![1](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/8639d118-3d53-4b40-b167-eacf7bf07c24)## Tugas 1
+# Tugas
+
+
+## Tugas 1
 Referensi : Topik 1 Sejarah OS
 1. Apa hubungan antara perangkat lunak aplikasi dan sistem operasi?
 - Sistem operasi adalah wadah untuk menjalankan perangkat lunak aplikasi
