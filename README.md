@@ -1,4 +1,4 @@
-## Tugas 1
+![1](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/8639d118-3d53-4b40-b167-eacf7bf07c24)## Tugas 1
 Referensi : Topik 1 Sejarah OS
 1. Apa hubungan antara perangkat lunak aplikasi dan sistem operasi?
 - Sistem operasi adalah wadah untuk menjalankan perangkat lunak aplikasi
@@ -142,3 +142,21 @@ Kompatibilitas Sistem Operasi:
 BIOS: Umumnya lebih terbatas dalam mendukung sistem operasi modern, terutama sistem operasi 64-bit.
 EFI: Lebih mendukung sistem operasi modern dan dapat bekerja dengan baik dengan sistem operasi 32-bit dan 64-bit.
 Pada umumnya, EFI dianggap lebih canggih dan fleksibel daripada BIOS, dan banyak sistem modern mengadopsi EFI sebagai pengganti BIOS.
+
+
+## Tugas 3
+4. Instalasi gcc, make, dan git
+![1](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/5c8a8233-565e-42d7-987b-c8f842b12b8b)
+Masuk ke terminal Debian
+
+![2](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/6819bb32-0179-48fd-a05f-93f827d3d6fb)
+Login sebagai super user
+
+![3](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/21f13ff2-a1dd-4526-aa14-d5904fec43d6)
+Install gcc
+
+![4](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/e8a28ac1-b52a-4d9c-9e2c-baa315f8f1df)
+Install make
+
+![5](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/89d18ce0-1663-4d27-8f40-66b65cf7276d)
+Install git
