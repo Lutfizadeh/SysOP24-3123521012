@@ -155,16 +155,36 @@ Pada umumnya, EFI dianggap lebih canggih dan fleksibel daripada BIOS, dan banyak
 ![3](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/c44101ec-06fc-4c3b-a951-78ffbf7d8d02)
 - Masuk ke direktori flops-iops
 ![4](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/8415d6ac-12cf-48ae-9af1-463f8df64456)
+```fish
 $ make
+```
 ![5](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/a2eecbfa-2ebe-48ff-867d-d352ba5d35c5)
+```fish
 $ make clean
+```
 ![6](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/5dedc913-d75b-4682-b4eb-ad6ebdf48130)
+```fish
 $ sudo make install
+```
 ![7](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/dfc6193a-eb61-43dc-86c7-73cc87d64758)
+```fish
 $ sudo make uninstall
+```
+
 ![8](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/17292880-b3a8-41d6-bcf4-6ffa3d92f7ab)
+Percobaan 1
+![9](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/3b73469d-97ed-4167-8b3d-3fe61d6cbce9)
+Percobaan 2
+![10](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/17499c54-ff26-4fb3-8bff-955a2fb63309)
+Percobaan 3
+![11](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/e87fd1b5-eac1-449b-ba96-4993862d6fb1)
+Percobaan 4
+![12](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/d837d67d-340f-4246-a6b1-82efadc0e980)
+Percobaan 5
+```sh
 $ iops64 1
 $ flops64 1
+```
 1 = Jumlah CPU
 
 4. Instalasi gcc, make, dan git
