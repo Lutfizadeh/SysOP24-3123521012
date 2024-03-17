@@ -153,8 +153,21 @@ Pada umumnya, EFI dianggap lebih canggih dan fleksibel daripada BIOS, dan banyak
 
 
 ## Tugas 3
-1. Presentasi
-   
+1. Presentasi Langkah Demi Langkah Tentang Siklus CPU (Fetch, Decode, Execute)
+
+- Fetch
+-- CPU mengambil instruksi dari memori
+- Decode
+-- CPU menerjemahkan instruksi menjadi operasi yang dapat dipahami
+- Execute
+-- CPU menjalankan instruksi sesuai dengan operasinya
+- Peran bahasa pemrograman
+-- Bahasa pemrograman sebagai alat untuk menulis instruksi yang dimengerti oleh manusia
+- Peran compiler
+-- Compiler sebagai alat untuk menerjemahkan kode sumber dalam bahasa pemrograman tingkat tinggi menjadi kode mesin yang dapat dipahami oleh CPU
+- Peran sistem operasi
+-- Sistem operasi sebagai perantara antara program aplikasi dan perangkat keras komputer, menyediakan lingkungan eksekusi yang diperlukan
+
 2. Baca dan Pahami
    
 3. Git Clone dan Melakukan Percobaan
@@ -199,7 +212,12 @@ $ sudo make uninstall
 $ iops64 1
 $ flops64 1
 ```
-1 = Jumlah CPU
+1 = Jumlah CPU VM Debian
+
+- Analisa hasil percobaan dan kesimpulan IOPS dan FLOPS
+-- Iops mengukur jumlah operasi input/output yang dapat dilakukan oleh sistem dalam satu detik
+-- Flops mengukur jumlah operasi jumlah aritmatika floating-point yang dapat dilakukan oleh sistem dalam satu detik
+-- 64 menunjukkan bahwa pengukuran ini berlaku untuk sistem 64 bit
 
 4. Instalasi gcc, make, dan git
 
