@@ -92,71 +92,71 @@ f. Memuat driver perangkat kelas 'boot' dan kernel-mode dll diimpor oleh hal.dll
 ### Identifikasi Laptop :
 ASUS TUF GAMING F15
 
-CPU :
+1. CPU :
 ![image](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/88708c4f-84ee-40a8-af92-008d951fa105)
-Menggunakan processor : Intel Core I5 10300H dengan cores : 4
+- Menggunakan processor : Intel Core I5 10300H dengan cores : 4
 
-Mainboard :
+2. Mainboard :
 ![image](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/37189289-e893-472d-9e38-b9bdc19bda10)
-Menggunakan motherboard : ASUSTeK COMPUTER INC. dengan model : FX506LHB dan brand BIOS : American Megatrends Inc.
+- Menggunakan motherboard : ASUSTeK COMPUTER INC. dengan model : FX506LHB dan brand BIOS : American Megatrends Inc.
 
-Memory :
+3. Memory :
 ![image](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/64d4c52e-614f-47af-987c-aa60628bee7b)
-Dual DDR4 dengan ukuran 16GBytes
+- Dual DDR4 dengan ukuran 16GBytes
 
-SPD :
+4. SPD :
 ![image](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/dc2a6d2c-4c53-47ad-b9cd-e918ebb0c81c)
 ![image](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/b678a527-b086-4484-a657-fd124f28c6b2)
-Slot 1 menggunakan DDR4 8GB dengan module manuf Micron Technology dan slot 3 menggunakan DDR4 8GB dengan module manuf Lexar
+- Slot 1 menggunakan DDR4 8GB dengan module manuf Micron Technology dan slot 3 menggunakan DDR4 8GB dengan module manuf Lexar
 
-Graphics  :
+5. Graphics  :
 ![image](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/ea1336ea-e417-418d-a09c-fb512cb83b98)
 ![image](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/b8e40454-e7a8-4b6f-992a-a75ca7a897fe)
-Menggunakan Intel(R) UHD Graphics dan NVIDIA GeForce GTX 1650
+- Menggunakan Intel(R) UHD Graphics dan NVIDIA GeForce GTX 1650
 
-Bench :
+6. Bench :
 ![image](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/18777b78-0e5e-47cb-9702-80fd5879aecc)
-Menggunakan benchmark versi 17.01.64
+- Menggunakan benchmark versi 17.01.64
 
 ### Mindmap Sejarah, Cara Kerja, dan Fungsi-fungsi Sistem Operasi
 ![Mind Map sistem operasi](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/46e45d27-be69-4d32-90c3-1988f98e8623)
 
 ### Perbedaan BIOS dan EFI
-Arsitektur dan Desain:
-BIOS: Tradisionalnya, BIOS menggunakan model arsitektur firmware yang berbeda dan sering kali terbatas dalam kemampuan dan fleksibilitasnya. BIOS menggunakan MBR (Master Boot Record) untuk menyimpan informasi partisi dan kode bootloader.
-EFI: EFI dirancang dengan arsitektur yang lebih modern dan modular. EFI menggunakan GPT (GUID Partition Table) sebagai pengganti MBR, dan ini memungkinkan dukungan untuk partisi yang lebih besar dan lebih banyak partisi.
+1. Arsitektur dan Desain:
+- BIOS: Tradisionalnya, BIOS menggunakan model arsitektur firmware yang berbeda dan sering kali terbatas dalam kemampuan dan fleksibilitasnya. BIOS menggunakan MBR (Master Boot Record) untuk menyimpan informasi partisi dan kode bootloader.
+- EFI: EFI dirancang dengan arsitektur yang lebih modern dan modular. EFI menggunakan GPT (GUID Partition Table) sebagai pengganti MBR, dan ini memungkinkan dukungan untuk partisi yang lebih besar dan lebih banyak partisi.
 
-Bootloader:
-BIOS: Menggunakan bootloader yang terintegrasi dengan firmware dan biasanya terbatas pada bootloaders seperti GRUB atau LILO.
-EFI: Dapat menggunakan bootloader yang terpisah dari firmware. EFI mendukung bootloader seperti GRUB, rEFInd, atau Microsoft Boot Manager.
+2. Bootloader:
+- BIOS: Menggunakan bootloader yang terintegrasi dengan firmware dan biasanya terbatas pada bootloaders seperti GRUB atau LILO.
+- EFI: Dapat menggunakan bootloader yang terpisah dari firmware. EFI mendukung bootloader seperti GRUB, rEFInd, atau Microsoft Boot Manager.
 
-Antarmuka Pengguna:
-BIOS: Umumnya menggunakan antarmuka pengguna yang sederhana dan terbatas, sering kali hanya dapat diakses melalui tombol khusus saat boot.
-EFI: Menyediakan antarmuka pengguna yang lebih canggih, sering kali dengan dukungan untuk mouse dan grafis. EFI Shell memungkinkan pengguna untuk berinteraksi dengan firmware secara lebih kompleks.
+3. Antarmuka Pengguna:
+- BIOS: Umumnya menggunakan antarmuka pengguna yang sederhana dan terbatas, sering kali hanya dapat diakses melalui tombol khusus saat boot.
+- EFI: Menyediakan antarmuka pengguna yang lebih canggih, sering kali dengan dukungan untuk mouse dan grafis. EFI Shell memungkinkan pengguna untuk berinteraksi dengan firmware secara lebih kompleks.
 
-Dukungan Perangkat Keras:
-BIOS: Terbatas dalam mendukung perangkat keras modern dan fitur canggih seperti booting dari disk berkapasitas besar atau keamanan boot yang tinggi.
-EFI: Lebih fleksibel dan mendukung perangkat keras modern dengan lebih baik, seperti boot dari disk berkapasitas besar (lebih dari 2 TB) dan keamanan boot berbasis UEFI Secure Boot.
+4. Dukungan Perangkat Keras:
+- BIOS: Terbatas dalam mendukung perangkat keras modern dan fitur canggih seperti booting dari disk berkapasitas besar atau keamanan boot yang tinggi.
+- EFI: Lebih fleksibel dan mendukung perangkat keras modern dengan lebih baik, seperti boot dari disk berkapasitas besar (lebih dari 2 TB) dan keamanan boot berbasis UEFI Secure Boot.
 
-Kompatibilitas Sistem Operasi:
-BIOS: Umumnya lebih terbatas dalam mendukung sistem operasi modern, terutama sistem operasi 64-bit.
-EFI: Lebih mendukung sistem operasi modern dan dapat bekerja dengan baik dengan sistem operasi 32-bit dan 64-bit.
+5. Kompatibilitas Sistem Operasi:
+- BIOS: Umumnya lebih terbatas dalam mendukung sistem operasi modern, terutama sistem operasi 64-bit.
+- EFI: Lebih mendukung sistem operasi modern dan dapat bekerja dengan baik dengan sistem operasi 32-bit dan 64-bit.
 Pada umumnya, EFI dianggap lebih canggih dan fleksibel daripada BIOS, dan banyak sistem modern mengadopsi EFI sebagai pengganti BIOS.
 
 
 ## Tugas 3
 4. Instalasi gcc, make, dan git
 ![1](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/5c8a8233-565e-42d7-987b-c8f842b12b8b)
-Masuk ke terminal Debian
+- Masuk ke terminal Debian
 
 ![2](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/6819bb32-0179-48fd-a05f-93f827d3d6fb)
-Login sebagai super user
+- Login sebagai super user
 
 ![3](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/21f13ff2-a1dd-4526-aa14-d5904fec43d6)
-Install gcc
+- Install gcc
 
 ![4](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/e8a28ac1-b52a-4d9c-9e2c-baa315f8f1df)
-Install make
+- Install make
 
 ![5](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/89d18ce0-1663-4d27-8f40-66b65cf7276d)
-Install git
+- Install git
