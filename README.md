@@ -156,17 +156,17 @@ Pada umumnya, EFI dianggap lebih canggih dan fleksibel daripada BIOS, dan banyak
 1. Presentasi Langkah Demi Langkah Tentang Siklus CPU (Fetch, Decode, Execute)
 
 - Fetch
--- CPU mengambil instruksi dari memori
+   - CPU mengambil instruksi dari memori
 - Decode
--- CPU menerjemahkan instruksi menjadi operasi yang dapat dipahami
+   - CPU menerjemahkan instruksi menjadi operasi yang dapat dipahami
 - Execute
--- CPU menjalankan instruksi sesuai dengan operasinya
+   - CPU menjalankan instruksi sesuai dengan operasinya
 - Peran bahasa pemrograman
--- Bahasa pemrograman sebagai alat untuk menulis instruksi yang dimengerti oleh manusia
+   - Sebagai alat untuk menulis instruksi yang dimengerti oleh manusia
 - Peran compiler
--- Compiler sebagai alat untuk menerjemahkan kode sumber dalam bahasa pemrograman tingkat tinggi menjadi kode mesin yang dapat dipahami oleh CPU
+   - Sebagai alat untuk menerjemahkan source code dalam bahasa pemrograman tingkat tinggi menjadi kode mesin yang dapat dipahami oleh CPU
 - Peran sistem operasi
--- Sistem operasi sebagai perantara antara program aplikasi dan perangkat keras komputer, menyediakan lingkungan eksekusi yang diperlukan
+   - Sebagai perantara antara program aplikasi dan perangkat keras komputer dan menyediakan lingkungan eksekusi yang diperlukan
 
 2. Baca dan Pahami
    
@@ -174,26 +174,33 @@ Pada umumnya, EFI dianggap lebih canggih dan fleksibel daripada BIOS, dan banyak
 
 ![1](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/02f8cf47-9d5a-4082-814c-359918e5198e)
 - Melakukan clone ke https://github.com/ferryastika/flops-iops
+
 ![2](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/d9ae298b-f734-4215-bd66-8b14a73e9a24)
 - Cek file/direktori yang tersedia
+
 ![3](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/c44101ec-06fc-4c3b-a951-78ffbf7d8d02)
 - Masuk ke direktori flops-iops
+
 ![4](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/8415d6ac-12cf-48ae-9af1-463f8df64456)
 ```fish
 $ make
 ```
+
 ![5](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/a2eecbfa-2ebe-48ff-867d-d352ba5d35c5)
 ```fish
 $ make clean
 ```
+
 ![6](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/5dedc913-d75b-4682-b4eb-ad6ebdf48130)
 ```fish
 $ sudo make install
 ```
+
 ![7](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/dfc6193a-eb61-43dc-86c7-73cc87d64758)
 ```fish
 $ sudo make uninstall
 ```
+
 ![8](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/17292880-b3a8-41d6-bcf4-6ffa3d92f7ab)
 - Percobaan 1
 
@@ -212,12 +219,12 @@ $ sudo make uninstall
 $ iops64 1
 $ flops64 1
 ```
-1 = Jumlah CPU VM Debian
+Keterangan : 1 = Jumlah CPU VM Debian
 
 - Analisa hasil percobaan dan kesimpulan IOPS dan FLOPS
--- Iops mengukur jumlah operasi input/output yang dapat dilakukan oleh sistem dalam satu detik
--- Flops mengukur jumlah operasi jumlah aritmatika floating-point yang dapat dilakukan oleh sistem dalam satu detik
--- 64 menunjukkan bahwa pengukuran ini berlaku untuk sistem 64 bit
+   - Iops mengukur jumlah operasi input/output yang dapat dilakukan oleh sistem dalam satu detik
+   - Flops mengukur jumlah operasi jumlah aritmatika floating-point yang dapat dilakukan oleh sistem dalam satu detik
+   - 64 menunjukkan bahwa pengukuran ini berlaku untuk sistem 64 bit
 
 4. Instalasi gcc, make, dan git
 
