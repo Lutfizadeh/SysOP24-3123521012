@@ -174,7 +174,6 @@ $ sudo make install
 ```fish
 $ sudo make uninstall
 ```
-
 ![8](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/17292880-b3a8-41d6-bcf4-6ffa3d92f7ab)
 - Percobaan 1
 ![9](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/3b73469d-97ed-4167-8b3d-3fe61d6cbce9)
