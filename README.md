@@ -221,6 +221,9 @@ $ flops64 1
 ```
 Keterangan : 1 = Jumlah CPU VM Debian
 
+- Hasil perbandingan IOPS dan FLOPS dengan teman
+![iops-flops](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/89b9a4f5-f21f-4ecd-8a32-ef1b00aa2ef8)
+
 - Analisa hasil percobaan dan kesimpulan IOPS dan FLOPS
    - Iops mengukur jumlah operasi input/output yang dapat dilakukan oleh sistem dalam satu detik
    - Flops mengukur jumlah operasi jumlah aritmatika floating-point yang dapat dilakukan oleh sistem dalam satu detik
