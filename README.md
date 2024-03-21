@@ -367,13 +367,17 @@ Keterangan : 1 = Jumlah CPU VM Debian
       ```
 
 3.	Percobaan 3 : Pipa (pipeline)
-      1)	Operator pipa (|) digunakan untuk membuat eksekusi proses dengan melewati data langsung ke data lainnya. 
+      1)	Operator pipa (|) digunakan untuk membuat eksekusi proses dengan melewati data langsung ke data lainnya.
+      ![17](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/288dceaa-cceb-4a7b-a082-68c6b2b7cca1)
+      ![18](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/d63e43a9-1239-4ebd-987d-eb027de1684c)
+      ![19](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/b7add0b0-8375-40b2-b95d-aca33586212d)
       ```
       Operator | untuk mengeksekusi proses dengan melewati data langsung ke data lainnya
       ```
 
 4.	Percobaan 4 : Filter
       2)	Pipa juga digunakan untuk mengkombinasikan utilitas sistem untuk membentuk fungsi yang lebih kompleks
+      ![20](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/0fb90500-156a-4114-b73a-e38c92bdd610)
       ```
       Operator | bisa dikombinsikan untuk membuat fungsi lebih kompleks (Ini adalah percobaan kedua, karena yang pertama ada kesalahan penulisan  data)
       ```
