@@ -384,11 +384,21 @@ Keterangan : 1 = Jumlah CPU VM Debian
 
 ### Latihan
 1.	Lihat daftar secara lengkap pada direktori aktif, belokkan tampilan standar output ke file baru.
+![21](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/e29a1be2-5a95-4cc4-b92f-0e00212b2f74)
+
 2.	Lihat daftar secara lengkap pada direktori /etc/passwd, belokkan tampilan standar output ke file baru tanpa menghapus file baru sebelumnya.
+![22](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/e10706bd-8352-492c-a0c2-503b50916f30)
+
 3.	Urutkan file baru dengan cara membelokkan standar input.
+![23](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/67d00ecf-f39a-4cc9-afe9-e162b9a62d0e)
+
 4.	Urutkan file baru dengan cara membelokkan standar input dan standar output ke file baru.urut.
-5.	Buatlah direktori latihan2 sebanyak 2 kali dan belokkan standar error ke file rmdirerror.txt. 
+![24](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/4a357ad4-ea02-4353-bcbd-c449fe23a83f)
+
+5.	Buatlah direktori latihan2 sebanyak 2 kali dan belokkan standar error ke file rmdirerror.txt.
+![25](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/cf934c88-02bc-4910-8d20-93bd7c629804)
 Notasi 2> untuk pembelokan standar error
+
 6.	Urutkan kalimat berikut:
 ```
 Jakarta
@@ -399,8 +409,11 @@ Palembang
 Lampung
 ```
 Dengan menggunakan notasi here document (<@@@ ...@@@)
+![26](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/96842118-ec55-477b-8d5d-78fb3280d405)
 Kombinasi here document (<<@@@ ...@@@) dan | sort menghasilkan masukan dengan abjad yang urut
+
 7.	Hitung jumlah baris, kata, dan karakter dari file baru.urut dengan menggunakan filter dan tambahkan data tersebut ke file baru.
+![27](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/9c4ab217-e20d-4612-a6c8-ea0e14f93ecc)
 Kombinasi antara | wc dan notasi > untuk memasukkan data jumlah baris, kata, dan karakter ke file lain
 8.	Gunakan perintah di bawah ini dan perhatikan hasilnya.
 ```
@@ -415,4 +428,5 @@ dog duck
 $ cat hello.txt | sort | uniq
 $ cat hello.txt | grep “dog” | grep -v “cat”
 ```
+![28](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/76b6e59a-1800-42f1-a125-a5333bcced4d)
 Command ini berisi pemasukan data ke file hello.txt yang kemudian diurutkan dan dihapus jika terdapat duplikasi data, lalu kata “dog” diganti dengan kata “cat”
