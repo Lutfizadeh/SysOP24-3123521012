@@ -280,3 +280,81 @@ Keterangan : 1 = Jumlah CPU VM Debian
 - wc untuk menghitung jumlah baris, kata, dan karakter dari baris-baris yang masukan
 - cut untuk mengambil kolom tertentu dari baris-baris masukannya
 - uniq untuk menghilangkan baris-baris berurutan yang mengalami duplikasi
+
+### Percobaan
+1.	Percobaan 1 : File descriptor
+1)	Output ke layar (standar output), input dari system (kernel)
+ 
+$ ps untuk mendeskripsikan file
+
+2)	Output ke layar (standar output), input dari keyboard (standard input)
+ 
+$ cat untuk menulis pesan
+
+3)	Input dari keyboard dan output ke alamat internet
+ 
+$ mail untuk mengirim email
+
+4)	Input nama direktori, output tidak ada (membuat direktori baru), bila terjadi error maka tampilan error pada layar (standard error)
+ 
+$ mkdir untuk membuat direktori/folder baru
+
+2.	Percobaan 2 : Pembelokan (redirection)
+1)	Pembelokan standar output
+ 
+$ cat 1> (nama file) untuk mengisi file
+
+2)	Pembelokan standar input, yaitu input dibelokkan dari keyboard menjadi dari file
+ 
+$ cat 0< (nama file) atau cat (nama file) untuk melihat isi file
+
+3)	Pembelokkan standar error untuk disimpan di file
+ 
+$ mkdir (nama direktori yang sudah ada) 2> (nama file) untuk menampilkan error
+
+4)	Notasi 2>&1 : pembelokan standar error (2>) adalah identik dengan file descriptor 1
+ 
+Notasi 2>&1 = 2> untuk pembelokan standar error
+
+5)	Notasi 1>&2 (atau >&2) : pembelokan standar output adalah sama dengan file descriptor 2 yaitu standar error
+ 
+Notasi 1>&2 = &2 untuk pembelokan standar error
+
+6)	Notasi >> (append)
+ 
+Notasi > untuk mengisi file, notasi >> untuk menambahkan isi file
+
+7)	Notasi here document (<<++ .... ++) digunakan sebagai pembatas input dari keyboard. Perhatikan bahwa tanda pembatas dapat digantikan dengan tanda apa saja, namun harus sama dan tanda penutup harus diberikan pada awal baris
+ 
+$ cat <<++ diakhiri ++ = $ cat <<%%% diakhiri %%% untuk menulis beberapa baris tulisan
+
+8)	Notasi – (input keyboard) adalah representan input dari keyboard. Artinya menampilkan file 1, kemudian menampilkan input dari keyboard dan menampilkan file 2. Perhatikan bahwa notasi “-“ berarti menyelipkan input dari keyboard
+ 
+Notasi – untuk menampilkan file
+
+9)	Untuk membelokkan standar output ke file, digunakan operator >
+ 
+Notasi > untuk pembelokan standar output ke file
+
+10)	Untuk menambahkan output ke file digunakan operator >>
+ 
+Notasi >> untuk menambahkan isi file
+
+11)	Untuk membelokkan standar input digunakan operator <
+ 
+Notasi < untuk pembelokan standar input
+
+12)	Pembelokkan standar input dan standar output dapat dikombinasikan tetapi tidak boleh menggunakan nama file yang sama sebagai standar input dan output.
+ 
+Kombinasi < dan > tidak boleh menggunakan nama file yang sama
+
+3.	Percobaan 3 : Pipa (pipeline)
+1)	Operator pipa (|) digunakan untuk membuat eksekusi proses dengan melewati data langsung ke data lainnya.
+ 
+ 
+ 
+Operator | untuk mengeksekusi proses dengan melewati data langsung ke data lainnya
+4.	Percobaan 4 : Filter
+2)	Pipa juga digunakan untuk mengkombinasikan utilitas sistem untuk membentuk fungsi yang lebih kompleks
+ 
+Operator | bisa dikombinsikan untuk membuat fungsi lebih kompleks (Ini adalah percobaan kedua, karena yang pertama ada kesalahan penulisan  data)
