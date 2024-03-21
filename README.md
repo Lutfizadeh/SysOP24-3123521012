@@ -155,6 +155,8 @@ Pada umumnya, EFI dianggap lebih canggih dan fleksibel daripada BIOS, dan banyak
 ## Tugas 3
 1. Presentasi Langkah Demi Langkah Tentang Siklus CPU (Fetch, Decode, Execute)
 
+![siklus cpu1](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/f7bb4200-2574-4f56-98c7-384397581c01)
+
 - Fetch
    - CPU mengambil instruksi dari memori
 - Decode
