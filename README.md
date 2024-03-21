@@ -155,14 +155,26 @@ Pada umumnya, EFI dianggap lebih canggih dan fleksibel daripada BIOS, dan banyak
 ## Tugas 3
 1. Presentasi Langkah Demi Langkah Tentang Siklus CPU (Fetch, Decode, Execute)
 
-![siklus cpu1](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/f7bb4200-2574-4f56-98c7-384397581c01)
+![awal](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/c63c4ab1-69cd-4570-b721-fabc354def43)
+Inisialisasi awal
 
+![fetch1](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/cd2c4530-ac2b-43ab-9967-66f9d1f65d4b)
+![fetch2](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/d272bd36-dec8-4203-8fa0-ec4629a783d1)
 - Fetch
-   - CPU mengambil instruksi dari memori
+   - Programme Counter mulai dari 0 (alamat instruksi di memori)
+   - CPU mengambil instruksi dari memori, kemudian valuenya diletakkan di Instruction Register
+
+![decode](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/67f20e6a-bc12-426b-9369-3edd3ea07551)
 - Decode
    - CPU menerjemahkan instruksi menjadi operasi yang dapat dipahami
+
+![execute](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/faf96c11-8023-4123-9051-8fd260753c05)
 - Execute
-   - CPU menjalankan instruksi sesuai dengan operasinya
+   - CPU menjalankan instruksi sesuai dengan operasinya. Dalam kasus ini instruksinya adalah LOAD 6 yang berarti CPU menampilkan value dari memori yang beralamat 6 ke accumulator
+
+Proses fetch->decode->execute terjadi berulang-ulang (looping) sampai perintah selesai dieksekusi semuanya.
+Setiap proses terjadi dalam satu kali jentikan jari.
+
 - Peran bahasa pemrograman
    - Sebagai alat untuk menulis instruksi yang dimengerti oleh manusia
 - Peran compiler
