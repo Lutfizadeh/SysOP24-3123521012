@@ -284,14 +284,14 @@ Keterangan : 1 = Jumlah CPU VM Debian
 ### Percobaan
 1.	Percobaan 1 : File descriptor
    1)	Output ke layar (standar output), input dari system (kernel)
-      ![1](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/d6fb662b-4310-49ca-8560-efee361fbebd)
-     	$ ps untuk mendeskripsikan file
-     	2)	Output ke layar (standar output), input dari keyboard (standard input)
-      $ cat untuk menulis pesan
-      3)	Input dari keyboard dan output ke alamat internet
-      $ mail untuk mengirim email
-      4)	Input nama direktori, output tidak ada (membuat direktori baru), bila terjadi error maka tampilan error pada layar (standard error)
-      $ mkdir untuk membuat direktori/folder baru
+   ![1](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/d6fb662b-4310-49ca-8560-efee361fbebd)
+   ```$ ps untuk mendeskripsikan file```
+   2)	Output ke layar (standar output), input dari keyboard (standard input)
+   ```$ cat untuk menulis pesan```
+   3)	Input dari keyboard dan output ke alamat internet
+   ```$ mail untuk mengirim email```
+   4)	Input nama direktori, output tidak ada (membuat direktori baru), bila terjadi error maka tampilan error pada layar (standard error)
+   ```$ mkdir untuk membuat direktori/folder baru```
 
 2.	Percobaan 2 : Pembelokan (redirection)
       1)	Pembelokan standar output
