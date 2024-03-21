@@ -429,4 +429,4 @@ $ cat hello.txt | sort | uniq
 $ cat hello.txt | grep “dog” | grep -v “cat”
 ```
 ![28](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/76b6e59a-1800-42f1-a125-a5333bcced4d)
-Command ini berisi pemasukan data ke file hello.txt yang kemudian diurutkan dan dihapus jika terdapat duplikasi data, lalu kata “dog” diganti dengan kata “cat”
+Command ini berisi pemasukan data ke file hello.txt yang kemudian diurutkan dan menampilkan data, yang mengandung kata “dog”, tetapi tidak mengandung kata “cat”
