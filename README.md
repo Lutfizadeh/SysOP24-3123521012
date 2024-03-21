@@ -289,64 +289,79 @@ Keterangan : 1 = Jumlah CPU VM Debian
       $ ps untuk mendeskripsikan file
       ```
       2)	Output ke layar (standar output), input dari keyboard (standard input)
+      ![2](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/fae98a75-35ff-41cf-ade1-802818d8db02)
       ```
       $ cat untuk menulis pesan
       ```
       3)	Input dari keyboard dan output ke alamat internet
+      ![3](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/9f6b0108-aea2-410e-9bb7-3f5c98cba4d4)
       ```
       $ mail untuk mengirim email
       ```
       4)	Input nama direktori, output tidak ada (membuat direktori baru), bila terjadi error maka tampilan error pada layar (standard error)
+      ![4](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/95001dff-f1b4-4e81-bc96-b37b4e28431a)
       ```
       $ mkdir untuk membuat direktori/folder baru
       ```
 
 2.	Percobaan 2 : Pembelokan (redirection)
       1)	Pembelokan standar output
+      ![5](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/a9007815-16fa-4068-94c4-51373019a27d)
       ```
       $ cat 1> (nama file) untuk mengisi file
       ```
       2)	Pembelokan standar input, yaitu input dibelokkan dari keyboard menjadi dari file
+      ![6](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/4d096dd5-fb76-46b6-8933-7bcc9856d871)
       ```
       $ cat 0< (nama file) atau cat (nama file) untuk melihat isi file
       ```
       3)	Pembelokkan standar error untuk disimpan di file
+      ![7](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/ca1522d1-dd22-4aea-88d9-04d0d178807e)
       ```
       $ mkdir (nama direktori yang sudah ada) 2> (nama file) untuk menampilkan error
       ```
-      4)	Notasi 2>&1 : pembelokan standar error (2>) adalah identik dengan file descriptor 1 
+      4)	Notasi 2>&1 : pembelokan standar error (2>) adalah identik dengan file descriptor 1
+      ![8](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/fac53043-5722-4f46-b43a-e9e82595461c)
       ```
       Notasi 2>&1 = 2> untuk pembelokan standar error
       ```
       5)	Notasi 1>&2 (atau >&2) : pembelokan standar output adalah sama dengan file descriptor 2 yaitu standar error
+      ![9](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/c4c08b7d-e6c5-4c57-a453-bd20ddcd4f98)
       ```
       Notasi 1>&2 = &2 untuk pembelokan standar error
       ```
       6)	Notasi >> (append)
+      ![10](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/e01b4bec-2743-42cc-918e-13eae9b0196a)
       ```
       Notasi > untuk mengisi file, notasi >> untuk menambahkan isi file
       ```
       7)	Notasi here document (<<++ .... ++) digunakan sebagai pembatas input dari keyboard. Perhatikan bahwa tanda pembatas dapat digantikan dengan tanda apa saja, namun harus sama dan tanda penutup            harus diberikan pada awal baris
+      ![11](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/1bbb57a9-6753-477f-af75-1e5eeb471cd3)
       ```
       $ cat <<++ diakhiri ++ = $ cat <<%%% diakhiri %%% untuk menulis beberapa baris tulisan
       ```
       8)	Notasi – (input keyboard) adalah representan input dari keyboard. Artinya menampilkan file 1, kemudian menampilkan input dari keyboard dan menampilkan file 2. Perhatikan bahwa notasi “-“ berarti        menyelipkan input dari keyboard
+      ![12](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/584a5530-195a-4832-baf8-fe3540ad5cb3)
       ```
       Notasi – untuk menampilkan file
       ```
       9)	Untuk membelokkan standar output ke file, digunakan operator >
+      ![13](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/676619b4-9f70-4b57-9055-e089d2c6ed05)
       ```
       Notasi > untuk pembelokan standar output ke file
       ```
       10)	Untuk menambahkan output ke file digunakan operator >>
+      ![14](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/3cdce610-ed78-42b5-8664-42c4298a9607)
       ```
       Notasi >> untuk menambahkan isi file
       ```
       11)	Untuk membelokkan standar input digunakan operator <
+      ![15](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/7e5a2f1f-f1d2-44b9-a1b7-110586670c25)
       ```
       Notasi < untuk pembelokan standar input
       ```
       12)	Pembelokkan standar input dan standar output dapat dikombinasikan tetapi tidak boleh menggunakan nama file yang sama sebagai standar input dan output.
+      ![16](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/c4b6fa5e-0fe9-4a66-ac94-73a40ecfd6db)
       ```
       Kombinasi < dan > tidak boleh menggunakan nama file yang sama
       ```
