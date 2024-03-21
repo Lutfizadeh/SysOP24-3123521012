@@ -262,3 +262,21 @@ Keterangan : 1 = Jumlah CPU VM Debian
 
 ![5](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/89d18ce0-1663-4d27-8f40-66b65cf7276d)
 - Install git
+
+
+## Tugas 4
+# Tugas Pendahuluan
+1.	Apa yang dimaksud redirection?
+Redirection adalah pembelokan, yaitu untuk mengalihkan file descriptor dari 0, 1, dan 2
+2.	Apa yang dimaksud pipeline?
+Pipeline adalah alat komunikasi antar proses, yang menghubungkan proses 1 dengan proses 2
+3.	Apa yang dimaksud perintah di bawah ini:
+echo, cat, more, sort, grep, wc, cut, uniq
+echo untuk mengisi file
+cat untuk mengisi kemudian menampilkan isi file
+more untuk menampilkan isi lebih detail dari suatu folder
+sort untuk mengurutkan masukannya berdasarkan urutan ASCII
+grep untuk menyaring dan menampilkan baris-baris yang mengandung pola tertentu
+wc untuk menghitung jumlah baris, kata, dan karakter dari baris-baris yang masukan
+cut untuk mengambil kolom tertentu dari baris-baris masukannya
+uniq untuk menghilangkan baris-baris berurutan yang mengalami duplikasi
