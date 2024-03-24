@@ -194,8 +194,8 @@ Pada umumnya, EFI dianggap lebih canggih dan fleksibel daripada BIOS, dan banyak
 38. Selamat! Debian sudah terinstall hehe...
 39. Klik user lalu masukkan password user, bukan root (Langkah 21)
 40. Selamat!!! Anda sudah masuk ke desktop Debian eak
-NB:
-~ ~ ~ : keterangan pengganti kalimat lain
+- NB:
+- ~ ~ ~ : keterangan pengganti kalimat lain
 
 ### Soal
 1. Presentasi Langkah Demi Langkah Tentang Siklus CPU (Fetch, Decode, Execute)
