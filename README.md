@@ -153,6 +153,51 @@ Pada umumnya, EFI dianggap lebih canggih dan fleksibel daripada BIOS, dan banyak
 
 
 ## Tugas 3
+### Cara Install Debian
+1. Download installer Debian [di sini](https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/debian-12.5.0-amd64-DVD-1.iso)
+2. Buka Virtual Machine (VM)
+3. Klik *New* di bagian atas
+4. Beri nama (Misal: *Debian12 Desktop Lutfi*, maka type akan menyesuaikan)
+5. Klik *Next* -> *Next* -> *Next* -> *Finish*
+6. Klik *Start* di bagian atas
+7. Tunggu hingga muncul pop up
+8. Jika sudah muncul, klik tanda panah ke bawah -> *Other*
+9. Cari dan pilih installer Debian yan sudah didownload
+10. Klik *Mount and Retry Boot*
+11. Klik *Install*
+12. Pilih bahasa (Contoh: English)
+13. Pilih lokasi (Jika Indonesia, maka klik *other* -> *Asia* -> *Indonesia*)
+14. Pilih konfigurasi lokal (Direkomendasikan United States)
+15. Pilih konfigurasi keyboard (Biasanya American English)
+16. Masukkan hostname (Contoh: LUTFI)
+17. Masukkan domain name (Contoh: lutfi.pens.ac.id)
+18. Masukkan password root (Default: 1) dan masukkan verifikasi password root yang sudah dimasukkan tadi
+19. Masukkan fullname untuk user baru (Contoh: lutfi)
+20. Masukkan username untuk akun (Contoh: lutfi)
+21. Masukkan password untuk user tadi (Contoh: 123lutfi-) dan masukkan verifikasi password untuk user yang sudah dimasukkan tadi
+22. Pilih konfigurasi waktu (WIB: *Western*, WITA: *Central*, WIT: *Eastern*)
+23. Pilih partition disks (Contoh: *Guide - use entire disks*)
+24. Pilih *SCS13 ~ ~ ~*
+25. Pilih *All files in one partition (Recommended for new users)*
+26. Pilih *Finish partitioning and write changes to disks*
+27. Pilih *Yes*
+28. Jika muncul pop up konfigurasi package manager, pilih *No*
+29. Jika muncul pop up konfigurasi package manager kedua (use a network mirror), pilih *Yes*
+30. Jika muncul pilih Debian archive mirror country, pilih *Go Back*, lalu pilih *Yes*
+31. Jika muncul pop up konfigurasi popularity-contest, pilih *Yes*
+32. Pilih software, pastikan *Debian desktop environment* dan *...GNOME* terbintang (Cara memberi bintang: klik spasi)
+33. Tunggu (Memerlukan waktu lebih lama)
+34. Instal GRUB boot loader (Pilih *Yes*)
+35. Pilih */dev/sda ~ ~ ~*
+36. Finish the installation (Pilih *Continue* untuk mereboot sistem)
+37. Pilih *Debian GNU/Linux* (Opsional, jika tidak dienter akan otomatis memilih ini)
+38. Selamat! Debian sudah terinstall hehe...
+39. Klik user lalu masukkan password user, bukan root (Langkah 21)
+40. Selamat!!! Anda sudah masuk ke desktop Debian eak
+NB:
+~ ~ ~ : keterangan pengganti kalimat lain
+
+### Soal
 1. Presentasi Langkah Demi Langkah Tentang Siklus CPU (Fetch, Decode, Execute)
 
 ![awal](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/c63c4ab1-69cd-4570-b721-fabc354def43)
