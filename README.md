@@ -177,7 +177,7 @@ Pada umumnya, EFI dianggap lebih canggih dan fleksibel daripada BIOS, dan banyak
 21. Masukkan password untuk user tadi (Contoh: 123lutfi-) dan masukkan verifikasi password untuk user yang sudah dimasukkan tadi
 22. Pilih konfigurasi waktu (WIB: *Western*, WITA: *Central*, WIT: *Eastern*)
 23. Pilih partition disks (Contoh: *Guide - use entire disks*)
-24. Pilih *SCS13 ~ ~ ~*
+24. Pilih *SCS13~~~*
 25. Pilih *All files in one partition (Recommended for new users)*
 26. Pilih *Finish partitioning and write changes to disks*
 27. Pilih *Yes*
