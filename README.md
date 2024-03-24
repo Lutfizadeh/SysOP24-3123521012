@@ -188,14 +188,14 @@ Pada umumnya, EFI dianggap lebih canggih dan fleksibel daripada BIOS, dan banyak
 32. Pilih software, pastikan *Debian desktop environment* dan *...GNOME* terbintang (Cara memberi bintang: klik spasi)
 33. Tunggu (Memerlukan waktu lebih lama)
 34. Instal GRUB boot loader (Pilih *Yes*)
-35. Pilih */dev/sda ~ ~ ~*
+35. Pilih */dev/sda~~~*
 36. Finish the installation (Pilih *Continue* untuk mereboot sistem)
 37. Pilih *Debian GNU/Linux* (Opsional, jika tidak dienter akan otomatis memilih ini)
 38. Selamat! Debian sudah terinstall hehe...
 39. Klik user lalu masukkan password user, bukan root (Langkah 21)
 40. Selamat!!! Anda sudah masuk ke desktop Debian eak
 - NB:
-- ~ ~ ~ : keterangan pengganti kalimat lain
+   - ~~~ : keterangan pengganti kalimat lain
 
 ### Soal
 1. Presentasi Langkah Demi Langkah Tentang Siklus CPU (Fetch, Decode, Execute)
