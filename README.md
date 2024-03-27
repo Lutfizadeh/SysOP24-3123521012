@@ -307,6 +307,17 @@ Keterangan : 1 = Jumlah CPU VM Debian
 ![5](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/89d18ce0-1663-4d27-8f40-66b65cf7276d)
 - Install git
 
+### Perbedaan Swapping dan Paging
+- Swapping:
+   - Menggeser seluruh proses antara RAM dan penyimpanan sekunder.
+   - Mengalokasikan ruang untuk proses secara keseluruhan.
+   - Lebih lambat karena melibatkan transfer data besar antara RAM dan disk.
+
+- Paging:
+   - Memecah memori menjadi unit-unit kecil yang disebut halaman.
+   - Hanya memindahkan halaman yang sedang digunakan antara RAM dan disk.
+   - Lebih efisien karena hanya memindahkan sebagian kecil data pada suatu waktu.
+
 
 ## Tugas 4
 ### Tugas Pendahuluan
