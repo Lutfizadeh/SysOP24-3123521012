@@ -339,122 +339,110 @@ Keterangan : 1 = Jumlah CPU VM Debian
 ### Percobaan
 1.	Percobaan 1 : File descriptor
       1)	Output ke layar (standar output), input dari system (kernel)
-      ![1](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/d6fb662b-4310-49ca-8560-efee361fbebd)
+      ![1](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/974a67e5-cd13-4c46-b66e-40c607b54fab)
       ```
       $ ps untuk mendeskripsikan file
       ```
       2)	Output ke layar (standar output), input dari keyboard (standard input)
-      ![2](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/fae98a75-35ff-41cf-ade1-802818d8db02)
+      ![2](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/e0c22f3e-fad9-47a2-beb1-60626da6c4a3)
       ```
       $ cat untuk menulis pesan
       ```
-      3)	Input dari keyboard dan output ke alamat internet
-      ![3](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/9f6b0108-aea2-410e-9bb7-3f5c98cba4d4)
-      ```
-      $ mail untuk mengirim email
-      ```
-      4)	Input nama direktori, output tidak ada (membuat direktori baru), bila terjadi error maka tampilan error pada layar (standard error)
-      ![4](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/95001dff-f1b4-4e81-bc96-b37b4e28431a)
+      3)	Input nama direktori, output tidak ada (membuat direktori baru), bila terjadi error maka tampilan error pada layar (standard error)
+      ![3](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/cd0760f2-538e-40ba-a3b7-ef48881d7591)
+
       ```
       $ mkdir untuk membuat direktori/folder baru
       ```
 
 2.	Percobaan 2 : Pembelokan (redirection)
       1)	Pembelokan standar output
-      ![5](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/a9007815-16fa-4068-94c4-51373019a27d)
+      ![4](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/9d281eab-78ac-4342-bc04-87e6514bef10)
       ```
       $ cat 1> (nama file) untuk mengisi file
       ```
       2)	Pembelokan standar input, yaitu input dibelokkan dari keyboard menjadi dari file
-      ![6](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/4d096dd5-fb76-46b6-8933-7bcc9856d871)
+      ![5](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/9aa2cb9d-29fd-43e0-9b4f-83fd079aeafe)
       ```
       $ cat 0< (nama file) atau cat (nama file) untuk melihat isi file
       ```
       3)	Pembelokkan standar error untuk disimpan di file
-      ![7](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/ca1522d1-dd22-4aea-88d9-04d0d178807e)
+      ![6](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/42afa425-5d8d-42e0-b817-77bdb402a2e3)
       ```
       $ mkdir (nama direktori yang sudah ada) 2> (nama file) untuk menampilkan error
       ```
       4)	Notasi 2>&1 : pembelokan standar error (2>) adalah identik dengan file descriptor 1
-      ![8](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/fac53043-5722-4f46-b43a-e9e82595461c)
+      ![7](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/07c1b2f8-b7f1-4f64-911c-244d7b1ddca8)
       ```
       Notasi 2>&1 = 2> untuk pembelokan standar error
       ```
       5)	Notasi 1>&2 (atau >&2) : pembelokan standar output adalah sama dengan file descriptor 2 yaitu standar error
-      ![9](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/c4c08b7d-e6c5-4c57-a453-bd20ddcd4f98)
+      ![8](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/ba589e4d-a5c3-43ca-9be5-f93f4ab35667)
       ```
       Notasi 1>&2 = &2 untuk pembelokan standar error
       ```
       6)	Notasi >> (append)
-      ![10](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/e01b4bec-2743-42cc-918e-13eae9b0196a)
+      ![9](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/cad39dd3-3ddd-4723-bccd-aa77f309238b)
       ```
       Notasi > untuk mengisi file, notasi >> untuk menambahkan isi file
       ```
       7)	Notasi here document (<<++ .... ++) digunakan sebagai pembatas input dari keyboard. Perhatikan bahwa tanda pembatas dapat digantikan dengan tanda apa saja, namun harus sama dan tanda penutup            harus diberikan pada awal baris
-      ![11](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/1bbb57a9-6753-477f-af75-1e5eeb471cd3)
+      ![10](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/6a69b8c9-bd6d-47ca-b51b-374b964dc5d1)
       ```
       $ cat <<++ diakhiri ++ = $ cat <<%%% diakhiri %%% untuk menulis beberapa baris tulisan
       ```
       8)	Notasi – (input keyboard) adalah representan input dari keyboard. Artinya menampilkan file 1, kemudian menampilkan input dari keyboard dan menampilkan file 2. Perhatikan bahwa notasi “-“ berarti        menyelipkan input dari keyboard
-      ![12](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/584a5530-195a-4832-baf8-fe3540ad5cb3)
+      ![11](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/e20ca610-a55f-4783-9627-35e13573ba31)
       ```
       Notasi – untuk menampilkan file
-      ```
-      9)	Untuk membelokkan standar output ke file, digunakan operator >
-      ![13](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/676619b4-9f70-4b57-9055-e089d2c6ed05)
-      ```
-      Notasi > untuk pembelokan standar output ke file
-      ```
-      10)	Untuk menambahkan output ke file digunakan operator >>
-      ![14](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/3cdce610-ed78-42b5-8664-42c4298a9607)
-      ```
-      Notasi >> untuk menambahkan isi file
-      ```
-      11)	Untuk membelokkan standar input digunakan operator <
-      ![15](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/7e5a2f1f-f1d2-44b9-a1b7-110586670c25)
-      ```
-      Notasi < untuk pembelokan standar input
-      ```
-      12)	Pembelokkan standar input dan standar output dapat dikombinasikan tetapi tidak boleh menggunakan nama file yang sama sebagai standar input dan output.
-      ![16](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/c4b6fa5e-0fe9-4a66-ac94-73a40ecfd6db)
-      ```
-      Kombinasi < dan > tidak boleh menggunakan nama file yang sama
       ```
 
 3.	Percobaan 3 : Pipa (pipeline)
       1)	Operator pipa (|) digunakan untuk membuat eksekusi proses dengan melewati data langsung ke data lainnya.
-      ![17](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/288dceaa-cceb-4a7b-a082-68c6b2b7cca1)
-      ![18](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/d63e43a9-1239-4ebd-987d-eb027de1684c)
-      ![19](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/b7add0b0-8375-40b2-b95d-aca33586212d)
+      ![12](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/33786e35-4388-45b5-a428-1e929772da7c)
+      ![13](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/8b2fa534-b468-4f0d-afc8-5507ebb0d033)
       ```
-      Operator | untuk mengeksekusi proses dengan melewati data langsung ke data lainnya
+      Operator | untuk mengeksekusi proses dengan melewati data langsung ke data lainnya (Tidak semua hasil dicapture)
       ```
+      2) Untuk membelokkan standart output ke file, digunakan operator ">"
+      ![14](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/c4289ad9-6df2-4217-b403-80ce75c22d8a)
+      3) Untuk menambahkan output ke file digunakan operator ">>"
+      ![15](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/b65f8a8c-ce5d-405f-9206-fce075151423)
+      4) Untuk membelokkan standart input digunakan operator "<"
+      ![16](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/14949b1c-2d0d-42b8-bf4d-6c05780f15e6)
+      5) Pembelokan standart input dan standart output dapat dikombinasikan tetapi tidak boleh menggunakan nama file yang sama sebagai standart input dan output.
+      ![17](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/87ac8238-2573-4e7e-a84e-ddb57bc6cea4)
 
 4.	Percobaan 4 : Filter
-      2)	Pipa juga digunakan untuk mengkombinasikan utilitas sistem untuk membentuk fungsi yang lebih kompleks
-      ![20](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/0fb90500-156a-4114-b73a-e38c92bdd610)
+      1)	Pipa juga digunakan untuk mengkombinasikan utilitas sistem untuk membentuk fungsi yang lebih kompleks
+      ![18](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/b5e074a8-15ae-4c72-92cf-0c8c9dd83817)
+      ![19](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/871db444-fa56-4104-b49b-49f908a3e653)
       ```
       Operator | bisa dikombinsikan untuk membuat fungsi lebih kompleks (Ini adalah percobaan kedua, karena yang pertama ada kesalahan penulisan  data)
       ```
 
 ### Latihan
 1.	Lihat daftar secara lengkap pada direktori aktif, belokkan tampilan standar output ke file baru.
-![21](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/e29a1be2-5a95-4cc4-b92f-0e00212b2f74)
+![20](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/327669ac-eb7d-40c9-ae8b-19a78de084d4)
 
 2.	Lihat daftar secara lengkap pada direktori /etc/passwd, belokkan tampilan standar output ke file baru tanpa menghapus file baru sebelumnya.
-![22](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/e10706bd-8352-492c-a0c2-503b50916f30)
+![21](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/31db456f-3a3c-4c8e-a144-c9a810c8ec43)
 
 3.	Urutkan file baru dengan cara membelokkan standar input.
-![23](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/67d00ecf-f39a-4cc9-afe9-e162b9a62d0e)
+![22](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/3b587231-2bea-4bf7-b38a-8001750f86e4)
 
 4.	Urutkan file baru dengan cara membelokkan standar input dan standar output ke file baru.urut.
-![24](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/4a357ad4-ea02-4353-bcbd-c449fe23a83f)
+![23](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/4a9fe48d-86e6-440c-807c-809461bed2e3)
+![24](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/5c00c1e7-175a-4212-b469-d113738eea82)
+![25](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/8bade487-616e-4199-bd8d-bd6c2f302172)
+![26](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/e5758fd7-cc9b-4ce2-accc-7082f54934fd)
+![27](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/aa8e5463-bc14-4a4d-9a59-c5bd1df54e79)
 
-5.	Buatlah direktori latihan2 sebanyak 2 kali dan belokkan standar error ke file rmdirerror.txt.
-![25](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/cf934c88-02bc-4910-8d20-93bd7c629804)
+5.	Buatlah direktori latihan 2 sebanyak 2 kali dan belokkan standar error ke file rmdirerror.txt.
+![28](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/6d72710a-033e-4db4-b70a-486210fe0098)
 Notasi 2> untuk pembelokan standar error
 
-6.	Urutkan kalimat berikut:
+7.	Urutkan kalimat berikut:
 ```
 Jakarta
 Bandung
@@ -464,11 +452,11 @@ Palembang
 Lampung
 ```
 Dengan menggunakan notasi here document (<@@@ ...@@@)
-![26](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/96842118-ec55-477b-8d5d-78fb3280d405)
-Kombinasi here document (<<@@@ ...@@@) dan | sort menghasilkan masukan dengan abjad yang urut
+![29](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/af9a2dae-6693-4868-bbc1-779ee506191d)
+Kombinasi here document **<<@@@ ...@@@** dan **| sort** menghasilkan output dengan abjad yang urut
 
 7.	Hitung jumlah baris, kata, dan karakter dari file baru.urut dengan menggunakan filter dan tambahkan data tersebut ke file baru.
-![27](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/9c4ab217-e20d-4612-a6c8-ea0e14f93ecc)
+![30](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/943f4359-fc64-404f-a28c-fbf5f5702bdf)
 Kombinasi antara | wc dan notasi > untuk memasukkan data jumlah baris, kata, dan karakter ke file lain
 8.	Gunakan perintah di bawah ini dan perhatikan hasilnya.
 ```
@@ -483,5 +471,5 @@ dog duck
 $ cat hello.txt | sort | uniq
 $ cat hello.txt | grep “dog” | grep -v “cat”
 ```
-![28](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/76b6e59a-1800-42f1-a125-a5333bcced4d)
+![31](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/ac2ea3b1-0d70-40d7-ac18-2805f2f98f6c)
 Command ini berisi pemasukan data ke file hello.txt yang kemudian diurutkan dan menampilkan data, yang mengandung kata “dog”, tetapi tidak mengandung kata “cat”
