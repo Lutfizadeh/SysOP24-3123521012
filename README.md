@@ -202,37 +202,37 @@ Pada umumnya, EFI dianggap lebih canggih dan fleksibel daripada BIOS, dan banyak
 ![awal](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/c63c4ab1-69cd-4570-b721-fabc354def43)
 - Inisialisasi awal
 
-1. Proses 1
-   ![fetch1](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/cd2c4530-ac2b-43ab-9967-66f9d1f65d4b)
-   ![fetch2](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/d272bd36-dec8-4203-8fa0-ec4629a783d1)
-   - Fetch
-      - Programme Counter mulai dari 0 (alamat instruksi di memori)
-      - CPU mengambil instruksi (LOAD 6) dari memori, kemudian valuenya diletakkan di Instruction Register
+   1. Proses 1
+      ![fetch1](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/cd2c4530-ac2b-43ab-9967-66f9d1f65d4b)
+      ![fetch2](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/d272bd36-dec8-4203-8fa0-ec4629a783d1)
+      - Fetch
+         - Programme Counter mulai dari 0 (alamat instruksi di memori)
+         - CPU mengambil instruksi (LOAD 6) dari memori, kemudian valuenya diletakkan di Instruction Register
+   
+   
+      ![decode](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/67f20e6a-bc12-426b-9369-3edd3ea07551)
+      - Decode
+         - CPU menerjemahkan instruksi menjadi operasi yang dapat dipahami
+   
+   
+      ![execute](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/faf96c11-8023-4123-9051-8fd260753c05)
+      - Execute
+         - LOAD 6 yang berarti CPU menampilkan value dari memori yang beralamat 6 ke accumulator
 
-
-   ![decode](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/67f20e6a-bc12-426b-9369-3edd3ea07551)
-   - Decode
-      - CPU menerjemahkan instruksi menjadi operasi yang dapat dipahami
-
-
-   ![execute](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/faf96c11-8023-4123-9051-8fd260753c05)
-   - Execute
-      - LOAD 6 yang berarti CPU menampilkan value dari memori yang beralamat 6 ke accumulator
-
-2. Proses 2
-   ![fetch](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/6ed3ad0f-b6aa-49b5-b7f5-86ee6ce6991f)
-   ![fetch2](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/cae6bec7-2500-4468-840e-7e14cf9c8c4d)
-   - Fetch
-      - Programme Counter increment (bertambah 1) menjadi 1
-      - CPU mengambil instruksi (ADD 7) dari memori, kemudian valuenya diletakkan di Instruction Register
-
-   ![decode](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/6beb242c-93d7-4a3e-9a9f-25f672f67a5c)
-   - Decode
-      - CPU menerjemahkan instruksi menjadi operasi yang dapat dipahami
-    
-   ![execute](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/d06ff3a6-d4a3-478f-957f-7b7f0f706321)
-   - Execute
-      - CPU menambah value dari RAM address 7 ke accumulator
+   2. Proses 2
+      ![fetch](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/6ed3ad0f-b6aa-49b5-b7f5-86ee6ce6991f)
+      ![fetch2](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/cae6bec7-2500-4468-840e-7e14cf9c8c4d)
+      - Fetch
+         - Programme Counter increment (bertambah 1) menjadi 1
+         - CPU mengambil instruksi (ADD 7) dari memori, kemudian valuenya diletakkan di Instruction Register
+   
+      ![decode](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/6beb242c-93d7-4a3e-9a9f-25f672f67a5c)
+      - Decode
+         - CPU menerjemahkan instruksi menjadi operasi yang dapat dipahami
+       
+      ![execute](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/d06ff3a6-d4a3-478f-957f-7b7f0f706321)
+      - Execute
+         - CPU menambah value dari RAM address 7 ke accumulator
 
    3. Proses 3
       ![fetch](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/8ab41546-7263-4801-87fc-2aafc2be0270)
@@ -248,6 +248,21 @@ Pada umumnya, EFI dianggap lebih canggih dan fleksibel daripada BIOS, dan banyak
       ![execute](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/a8dd6525-e944-4690-b6f7-985931bfba89)
       - Execute
          - CPU memasukkan value dari accumulator ke RAM address 6
+
+   4. Proses 4
+      ![fetch](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/892016a0-596b-4cba-b7d1-8e53c5ca8a78)
+      ![fetch2](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/8e1602b8-54bc-4535-ad36-e5bc8a8c253a)
+      - Fetch
+         - Programme Counter increment (bertambah 1) menjadi 3
+         - CPU mengambil instruksi (JUMP 1) dari memori, kemudian valuenya diletakkan di Instruction Register
+
+      ![decode](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/1a2977d5-aa20-4387-946f-7153fee3db55)
+      - Decode
+         - CPU menerjemahkan instruksi menjadi operasi yang dapat dipahami
+    
+      ![execute](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/aaae3365-0713-4a47-8b10-286ab45671b5)
+      - Execute
+         - CPU kembali mengakses ke RAM address 1
 
    
 - Proses fetch->decode->execute terjadi berulang-ulang (looping) sampai perintah selesai dieksekusi semuanya.
