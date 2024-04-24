@@ -519,3 +519,103 @@ $ cat hello.txt | grep “dog” | grep -v “cat”
 ```
 ![31](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/ac2ea3b1-0d70-40d7-ac18-2805f2f98f6c)
 Command ini berisi pemasukan data ke file hello.txt yang kemudian diurutkan dan menampilkan data, yang mengandung kata “dog”, tetapi tidak mengandung kata “cat”
+
+
+## Tugas 5
+### Hubungan Arsitektur CPU dengan Arsitektur OS
+1 Sederhananya
+  - Arsitektur CPU: Menentukan bagaimana prosesor (CPU) bekerja, termasuk instruksi yang dapat dieksekusi, cara akses memori, dan mode operasi. Contoh arsitektur CPU termasuk x86, ARM, dan MIPS.
+  - Arsitektur OS: Merupakan struktur dan fungsi dari sistem operasi, yang mengatur cara penggunaan sumber daya komputer seperti memori, CPU, dan perangkat keras lainnya. Sistem operasi seperti Windows, macOS, dan Linux adalah contoh arsitektur OS.
+
+2. Kompleksnya
+  - Kompatibilitas Instruksi: Sistem operasi harus dapat memahami dan menggunakan instruksi yang didukung oleh arsitektur CPU yang digunakan pada sistem tersebut.
+  - Manajemen Sumber Daya: Sistem operasi bertanggung jawab untuk mengelola sumber daya komputer, termasuk alokasi memori, penjadwalan proses, dan manajemen perangkat keras. Ini bergantung pada cara arsitektur CPU menyediakan akses ke sumber daya tersebut.
+  - Driver Perangkat: Sistem operasi menyediakan driver perangkat untuk berkomunikasi dengan perangkat keras. Driver ini harus cocok dengan arsitektur CPU tertentu dan memahami cara kerja perangkat keras tersebut.
+  - Optimasi Kinerja: Sistem operasi dapat melakukan optimasi kinerja yang disesuaikan dengan karakteristik arsitektur CPU tertentu, seperti pengaturan jadwal proses, manajemen cache, atau penggunaan instruksi-instruksi spesifik.
+
+### Fork
+1. C Program Forking Separate Process
+   ```
+   #include <sys/types.h>
+   #include <stdio.h>
+   #include <unistd.h>
+   
+   int main() {
+       pid_t pid;
+       
+       /* fork a child process */
+       pid = fork();
+       
+       if(pid < 0) {
+           /* error occurred */
+           fprintf(stderr, "Fork Failed");
+           return 1;
+       } else if(pid == 0) {
+           /* child process */
+           execlp("/bin/ls", "ls", NULL);
+       } else {
+           /* parent process */
+           /* parent will wait for the child to complete */
+           wait(NULL);
+           printf("Child Complete");
+       }
+       
+       return 0;
+   }
+   ```
+   Hasil : Error
+
+2. Creating a Separate Process via Windows API
+   ```
+   #include <stdio.h>
+   #include <windows.h>
+   
+   int main(VOID) {
+   	STARTUPINFO si;
+   	PROCESS_INFORMATION pi;
+   	
+   	/* allocate memory */
+   	ZeroMemory(&si, sizeof(si));
+   	si.cb = sizeof(si);
+   	ZeroMemory(&pi, sizeof(pi));
+   	
+   	/* create child process */
+   	if(!CreateProcess(NULL,
+   	/* use command line */
+   	"C:\\WINDOWS\\system32\\mspaint.exe", /* command */
+   	NULL, /* don't inherit process handle */
+   	NULL, /* don't inherit thread handle */
+   	FALSE, /* disable handle inheritance */
+   	0, /* no creation flags */
+   	NULL, /* use parent's environment block */
+   	NULL, /* use parent's existing directory */
+   	&si,
+   	&pi))
+   	{
+   		fprintf(stderr, "Create Process Failed");
+   		return -1;
+   	}
+   	/* parent will wait the child to complete */
+   	WaitForSingleObject(pi.hProcess, INFINITE);
+   	printf("Child Complete");
+   	
+   	/* close handles */
+   	CloseHandle(pi.hProcess);
+   	CloseHandle(pi.hThread);
+   }
+   ```
+   Hasil:
+   ![image](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/fd0656f7-874d-42cb-8718-cb3f6e5197ce)
+
+### Jalankan Orphan dan Zombie
+
+### Producer dan Consumer Problem
+
+
+
+
+
+
+
+
+
