@@ -523,7 +523,7 @@ Command ini berisi pemasukan data ke file hello.txt yang kemudian diurutkan dan 
 
 ## Tugas 5
 ### Hubungan Arsitektur CPU dengan Arsitektur OS
-1 Sederhananya
+1. Sederhananya
   - Arsitektur CPU: Menentukan bagaimana prosesor (CPU) bekerja, termasuk instruksi yang dapat dieksekusi, cara akses memori, dan mode operasi. Contoh arsitektur CPU termasuk x86, ARM, dan MIPS.
   - Arsitektur OS: Merupakan struktur dan fungsi dari sistem operasi, yang mengatur cara penggunaan sumber daya komputer seperti memori, CPU, dan perangkat keras lainnya. Sistem operasi seperti Windows, macOS, dan Linux adalah contoh arsitektur OS.
 
@@ -534,80 +534,143 @@ Command ini berisi pemasukan data ke file hello.txt yang kemudian diurutkan dan 
   - Optimasi Kinerja: Sistem operasi dapat melakukan optimasi kinerja yang disesuaikan dengan karakteristik arsitektur CPU tertentu, seperti pengaturan jadwal proses, manajemen cache, atau penggunaan instruksi-instruksi spesifik.
 
 ### Fork
-1. C Program Forking Separate Process
+1. Fork 1
    ```
+   using namespace std;
+   
+   #include <iostream>
    #include <sys/types.h>
-   #include <stdio.h>
    #include <unistd.h>
    
-   int main() {
-       pid_t pid;
-       
-       /* fork a child process */
-       pid = fork();
-       
-       if(pid < 0) {
-           /* error occurred */
-           fprintf(stderr, "Fork Failed");
-           return 1;
-       } else if(pid == 0) {
-           /* child process */
-           execlp("/bin/ls", "ls", NULL);
-       } else {
-           /* parent process */
-           /* parent will wait for the child to complete */
-           wait(NULL);
-           printf("Child Complete");
-       }
-       
-       return 0;
+   
+   /* getpid() adalah system call yg dideklarasikan pada unistd.h.
+   Menghasilkan suatu nilai dengan type pid_t.
+   pid_t adalah type khusus untuk process id yg ekuivalen dg int
+   */
+   int main(void) {
+   	pid_t mypid;
+   	uid_t myuid;
+   	for (int i = 0; i < 3; i++) {
+   		mypid = getpid();
+   		cout << "I am process " << mypid << endl;
+   		cout << "My parent process ID is " << getppid() << endl;
+   		cout << "The owner of this process has uid " << getuid()
+   	<< endl;
+   /* sleep adalah system call atau fungsi library
+   yang menghentikan proses ini dalam detik
+   */
+   	sleep(3);
+   	}
+   return 0;
    }
    ```
    Hasil : Error
 
-2. Creating a Separate Process via Windows API
+2. Fork 2
    ```
-   #include <stdio.h>
-   #include <windows.h>
+   #include <iostream>
+   #include <sys/types.h>
+   #include <unistd.h>
+   using namespace std;
    
-   int main(VOID) {
-   	STARTUPINFO si;
-   	PROCESS_INFORMATION pi;
-   	
-   	/* allocate memory */
-   	ZeroMemory(&si, sizeof(si));
-   	si.cb = sizeof(si);
-   	ZeroMemory(&pi, sizeof(pi));
-   	
-   	/* create child process */
-   	if(!CreateProcess(NULL,
-   	/* use command line */
-   	"C:\\WINDOWS\\system32\\mspaint.exe", /* command */
-   	NULL, /* don't inherit process handle */
-   	NULL, /* don't inherit thread handle */
-   	FALSE, /* disable handle inheritance */
-   	0, /* no creation flags */
-   	NULL, /* use parent's environment block */
-   	NULL, /* use parent's existing directory */
-   	&si,
-   	&pi))
-   	{
-   		fprintf(stderr, "Create Process Failed");
-   		return -1;
+   
+   /* getpid() dan fork() adalah system call yg dideklarasikan
+   pada unistd.h.
+   Menghasilkan suatu nilai dengan type pid_t.
+   pid_t adalah type khusus untuk process id yg ekuivalen dg int
+   */
+   int main(void) {
+   	pid_t childpid;
+   	int x = 5;
+   	childpid = fork();
+   
+   	while (1) {
+   		cout << "This is process ID" << getpid() << endl;
+   		cout << "In this process the value of x becomes " << x << endl;	
+   		sleep(2);
+   		x++;
    	}
-   	/* parent will wait the child to complete */
-   	WaitForSingleObject(pi.hProcess, INFINITE);
-   	printf("Child Complete");
-   	
-   	/* close handles */
-   	CloseHandle(pi.hProcess);
-   	CloseHandle(pi.hThread);
+   	return 0;
    }
    ```
-   Hasil:
-   ![image](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/fd0656f7-874d-42cb-8718-cb3f6e5197ce)
+   Hasil: Error
 
-### Jalankan Orphan dan Zombie
+
+### Orphan dan Zombie
+1. Orphan
+   ```
+   #include <stdio.h>
+   #include <sys/types.h>
+   #include <unistd.h>
+   
+   int main()
+   {
+   	// fork() Create a child process
+   
+   	int pid = fork();
+   	if (pid > 0)
+   	{
+   		//getpid() returns process id
+   		// while getppid() will return parent process id
+   		printf("Parent process\n");
+   		printf("ID : %d\n\n",getpid());
+   	}
+   	else if (pid == 0)
+   	{
+   		printf("Child process\n");
+   		// getpid() will return process id of child process
+   		printf("ID: %d\n",getpid());
+   		// getppid() will return parent process id of child process
+   		printf("Parent -ID: %d\n\n",getppid());
+   
+   		sleep(10);
+   
+   		// At this time parent process has finished.
+   		// So if u will check parent process id 
+   		// it will show different process id
+   		printf("\nChild process \n");
+   		printf("ID: %d\n",getpid());
+   		printf("Parent -ID: %d\n",getppid());
+   	}
+   	else
+   	{
+   		printf("Failed to create child process");
+   	}
+   	
+   	return 0;
+   }
+   
+   /* https://www.includehelp.com/c-programs/orphan-process.aspx */
+   ```
+   Hasil: Error
+
+2. Zombie
+   ```
+   #include <stdlib.h>
+   #include <sys/types.h>
+   #include <unistd.h>
+   int main ()
+   {
+     pid_t child_pid;
+   
+      /* Create child*/
+     child_pid = fork ();
+     if (child_pid > 0) {
+   
+       /* Parent process */
+       sleep (60);
+     }
+     else {
+   
+       /*Child process. Exit immediately. */
+       exit (0);
+     }
+     return 0;
+   }
+   
+   /*ps -e -o pid,ppid,stat,cmd */
+   ```
+   Hasil: Error
 
 ### Producer dan Consumer Problem
 
