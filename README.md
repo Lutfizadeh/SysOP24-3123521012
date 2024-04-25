@@ -598,10 +598,16 @@ $ login [username]
    $ ./[namafile].exe
    ```
    
-   - Hasil :
+   Hasil :
    ![3](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/48c28108-9f83-4660-b37c-81c4356971a6)
 
 3. Fork 2
+   - Masuk ke compiler
+   ```
+   $ nano [namafile].cpp
+   ```
+   
+   - Lalu masukkan kode di bawah
    ```
    #include <iostream>
    #include <sys/types.h>
@@ -628,7 +634,23 @@ $ login [username]
    	return 0;
    }
    ```
-   Hasil: Error
+   
+   - Lalu simpan file dengan menekan ```Ctrl + X```
+ 
+   - Ubah file .cpp menjadi .exe
+   ```
+   $ g++ [namafile].cpp -o [namafile].exe
+   ```
+
+   - Jalankan kodenya
+   ```
+   $ ./[namafile].exe
+   ```
+
+   - Tekan ```Ctrl + C``` untuk menghentikan prosesnya
+   
+   Hasil :
+   ![4](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/be62a078-0a63-4bd7-81b5-1db58ddc0177)
 
 
 ### Orphan dan Zombie
