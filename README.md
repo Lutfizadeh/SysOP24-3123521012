@@ -598,7 +598,7 @@ $ login [username]
    $ ./[namafile].exe
    ```
    
-   Hasil :
+   - Hasil :
    ![3](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/48c28108-9f83-4660-b37c-81c4356971a6)
 
 3. Fork 2
@@ -649,12 +649,18 @@ $ login [username]
 
    - Tekan ```Ctrl + C``` untuk menghentikan prosesnya
    
-   Hasil :
+   - Hasil
    ![4](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/be62a078-0a63-4bd7-81b5-1db58ddc0177)
 
 
 ### Orphan dan Zombie
 1. Orphan
+   - Masuk ke compiler
+   ```
+   $ nano [namafile].c
+   ```
+   
+   - Lalu masukkan kode di bawah
    ```
    #include <stdio.h>
    #include <sys/types.h>
@@ -699,9 +705,31 @@ $ login [username]
    
    /* https://www.includehelp.com/c-programs/orphan-process.aspx */
    ```
-   Hasil: Error
+   
+   - Lalu simpan file dengan menekan ```Ctrl + X```
+ 
+   - Ubah file .c menjadi .exe
+   ```
+   $ g++ [namafile].c -o [namafile].exe
+   ```
+
+   - Jalankan kodenya
+   ```
+   $ ./[namafile].exe
+   ```
+
+   - Tekan ```Ctrl + C``` untuk menghentikan prosesnya
+   
+   - Hasil
+   ![5](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/b8dba801-5cfb-437f-afcd-ed9024edb78f)
 
 2. Zombie
+   - Masuk ke compiler
+   ```
+   $ nano [namafile].c
+   ```
+   
+   - Lalu masukkan kode di bawah
    ```
    #include <stdlib.h>
    #include <sys/types.h>
@@ -727,7 +755,24 @@ $ login [username]
    
    /*ps -e -o pid,ppid,stat,cmd */
    ```
-   Hasil: Error
+
+   - Lalu simpan file dengan menekan ```Ctrl + X```
+ 
+   - Ubah file .c menjadi .exe
+   ```
+   $ g++ [namafile].c -o [namafile].exe
+   ```
+
+   - Jalankan kodenya
+   ```
+   $ ./[namafile].exe
+   ```
+
+   - Tekan ```Ctrl + C``` untuk menghentikan prosesnya
+   
+   - Hasil
+   ![6](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/14b0dc30-88aa-4ef6-b189-8f7d3390258a)
+   
 
 ### Producer dan Consumer Problem
 
