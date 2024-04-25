@@ -534,7 +534,28 @@ Command ini berisi pemasukan data ke file hello.txt yang kemudian diurutkan dan 
   - Optimasi Kinerja: Sistem operasi dapat melakukan optimasi kinerja yang disesuaikan dengan karakteristik arsitektur CPU tertentu, seperti pengaturan jadwal proses, manajemen cache, atau penggunaan instruksi-instruksi spesifik.
 
 ### Fork
+Sebelum melakukan fork serta menjalankan orphan dan zombie, kita harus menginstall g++ dahulu.
+![1](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/f50d3e7e-6720-4346-8b13-a95f7adf89d6)
+```
+$ su root
+$ sudo apt update
+$ sudo apt upgrade
+$ sudo apt instal g++
+```
+
+Kemudian login kembali sebagai user
+![2](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/8ca8bc3e-a53d-4063-b161-f8d4f639f39f)
+```
+$ login [username]
+```
+
 1. Fork 1
+   - Masuk ke compiler
+   ```
+   $ nano [namafile].cpp
+   ```
+   
+   - Lalu masukkan kode di bawah
    ```
    using namespace std;
    
@@ -564,9 +585,23 @@ Command ini berisi pemasukan data ke file hello.txt yang kemudian diurutkan dan 
    return 0;
    }
    ```
-   Hasil : Error
+   
+   - Lalu simpan file dengan menekan ```Ctrl + X```
+ 
+   - Ubah file .cpp menjadi .exe
+   ```
+   $ g++ [namafile].cpp -o [namafile].exe
+   ```
 
-2. Fork 2
+   - Jalankan kodenya
+   ```
+   $ ./[namafile].exe
+   ```
+   
+   - Hasil :
+   ![3](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/48c28108-9f83-4660-b37c-81c4356971a6)
+
+3. Fork 2
    ```
    #include <iostream>
    #include <sys/types.h>
