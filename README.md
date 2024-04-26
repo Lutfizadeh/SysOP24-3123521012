@@ -522,6 +522,10 @@ Command ini berisi pemasukan data ke file hello.txt yang kemudian diurutkan dan 
 
 
 ## Tugas 5
+### Perbedaan CISC dan RISC
+- CISC (Complex Instruction Set Computing) adalah arsitektur komputer yang memiliki komponen sedikit dan cara memprogram yang lebih kompleks
+- RISC (Reduced Instruction Set Computing) adalah arsitektur komputer yang memiliki komponen banyak dan cara memprogram yang lebih sederhana
+
 ### Hubungan Arsitektur CPU dengan Arsitektur OS
 1. Sederhananya
   - Arsitektur CPU: Menentukan bagaimana prosesor (CPU) bekerja, termasuk instruksi yang dapat dieksekusi, cara akses memori, dan mode operasi. Contoh arsitektur CPU termasuk x86, ARM, dan MIPS.
@@ -774,10 +778,8 @@ $ login [username]
    ![6](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/14b0dc30-88aa-4ef6-b189-8f7d3390258a)
    
 
-### Producer dan Consumer Problem
-
-
-
+### Producer Consumer Problem
+Producer Consumer Problem adalah permasalahan produsen-konsumen. Ini mencerminkan keadaan di dunia nyata, seperti saat terjadi interaksi antara produsen dan konsumen di pasar. Dengan memahami masalahnya, kita bisa menerapkan prinsip prinsip sinkronisasi di dalam program untuk mengatasi masalahnya.
 
 
 
