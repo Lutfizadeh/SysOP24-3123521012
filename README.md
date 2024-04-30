@@ -605,7 +605,7 @@ $ login [username]
    - Hasil :
    ![3](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/48c28108-9f83-4660-b37c-81c4356971a6)
 
-3. Fork 2
+2. Fork 2
    - Masuk ke compiler
    ```
    $ nano [namafile].cpp
@@ -780,9 +780,3 @@ $ login [username]
 
 ### Producer Consumer Problem
 Producer Consumer Problem adalah permasalahan produsen-konsumen. Ini mencerminkan keadaan di dunia nyata, seperti saat terjadi interaksi antara produsen dan konsumen di pasar. Dengan memahami masalahnya, kita bisa menerapkan prinsip prinsip sinkronisasi di dalam program untuk mengatasi masalahnya.
-
-
-
-
-
-
