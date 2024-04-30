@@ -123,47 +123,47 @@
 ### FLOPS IOPS
 1. Instalasi gcc, make, dan git
 
-![1](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/5c8a8233-565e-42d7-987b-c8f842b12b8b)
+![](assets/terminal.png)
 - Masuk ke terminal Debian
 
-![2](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/6819bb32-0179-48fd-a05f-93f827d3d6fb)
+![](assets/root.png)
 - Login sebagai super user
 
-![3](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/21f13ff2-a1dd-4526-aa14-d5904fec43d6)
+![](assets/gcc.png)
 - Install gcc
 
-![4](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/e8a28ac1-b52a-4d9c-9e2c-baa315f8f1df)
+![](assets/make.png)
 - Install make
 
-![5](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/89d18ce0-1663-4d27-8f40-66b65cf7276d)
+![](assets/git.png)
 - Install git
 
 2. Melakukan clone dan flops iops
-![1](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/02f8cf47-9d5a-4082-814c-359918e5198e)
+![](assets/clone.png)
 - Melakukan clone ke https://github.com/ferryastika/flops-iops
 
-![2](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/d9ae298b-f734-4215-bd66-8b14a73e9a24)
+![](assets/ls.png)
 - Cek file/direktori yang tersedia
 
-![3](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/c44101ec-06fc-4c3b-a951-78ffbf7d8d02)
+![](assets/cd.png)
 - Masuk ke direktori flops-iops
 
-![4](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/8415d6ac-12cf-48ae-9af1-463f8df64456)
+![](assets/runmake.png)
 ```fish
 $ make
 ```
 
-![5](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/a2eecbfa-2ebe-48ff-867d-d352ba5d35c5)
+![](assets/makeclean.png)
 ```fish
 $ make clean
 ```
 
-![6](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/5dedc913-d75b-4682-b4eb-ad6ebdf48130)
+![](assets/makeinstall.png)
 ```fish
 $ sudo make install
 ```
 
-![7](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/dfc6193a-eb61-43dc-86c7-73cc87d64758)
+![](assets/makeuninstall.png)
 ```fish
 $ sudo make uninstall
 ```
