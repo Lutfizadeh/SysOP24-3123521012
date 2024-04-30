@@ -4,8 +4,8 @@
 - Inisialisasi awal
 
 1. Proses 1
-   - !![](assets/proses1/fetch1.jpg)
-   - !![](assets/proses1/fetch2.jpg)
+   - ![](assets/proses1/fetch1.jpg)
+   - ![](assets/proses1/fetch2.jpg)
      - Fetch
        - Programme Counter mulai dari 0 (alamat instruksi di memori)
        - CPU mengambil instruksi (LOAD 6) dari memori, kemudian valuenya diletakkan di Instruction Register
