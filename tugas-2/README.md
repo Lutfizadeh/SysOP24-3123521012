@@ -30,34 +30,34 @@ ASUS TUF GAMING F15
 
 1. CPU :
 
-![image](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/88708c4f-84ee-40a8-af92-008d951fa105)
+- ![](assets/cpu.png)
 - Menggunakan processor : Intel Core I5 10300H dengan cores : 4
 
 2. Mainboard :
 
-![image](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/37189289-e893-472d-9e38-b9bdc19bda10)
+- ![](assets/mainboard.png)
 - Menggunakan motherboard : ASUSTeK COMPUTER INC. dengan model : FX506LHB dan brand BIOS : American Megatrends Inc.
 
 3. Memory :
 
-![image](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/64d4c52e-614f-47af-987c-aa60628bee7b)
+- ![](assets/memory.png)
 - Dual DDR4 dengan ukuran 16GBytes
 
 4. SPD :
 
-![image](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/dc2a6d2c-4c53-47ad-b9cd-e918ebb0c81c)
-![image](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/b678a527-b086-4484-a657-fd124f28c6b2)
+- ![](assets/spd1.png)
+- ![](assets/spd2.png)
 - Slot 1 menggunakan DDR4 8GB dengan module manuf Micron Technology dan slot 3 menggunakan DDR4 8GB dengan module manuf Lexar
 
 5. Graphics  :
 
-![image](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/ea1336ea-e417-418d-a09c-fb512cb83b98)
-![image](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/b8e40454-e7a8-4b6f-992a-a75ca7a897fe)
+- ![](assets/graphics1.png)
+- ![](assets/graphics2.png)
 - Menggunakan Intel(R) UHD Graphics dan NVIDIA GeForce GTX 1650
 
 6. Bench :
 
-![image](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/18777b78-0e5e-47cb-9702-80fd5879aecc)
+- ![](assets/bench.png)
 - Menggunakan benchmark versi 17.01.64
 
 ## Mindmap Sejarah, Cara Kerja, dan Fungsi-fungsi Sistem Operasi
