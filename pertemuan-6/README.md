@@ -168,19 +168,19 @@ $ sudo make install
 $ sudo make uninstall
 ```
 
-![8](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/17292880-b3a8-41d6-bcf4-6ffa3d92f7ab)
+![](assets/percobaan1.png)
 - Percobaan 1
 
-![9](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/3b73469d-97ed-4167-8b3d-3fe61d6cbce9)
+![](assets/percobaan2.png)
 - Percobaan 2
 
-![10](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/17499c54-ff26-4fb3-8bff-955a2fb63309)
+![](assets/percobaan3.png)
 - Percobaan 3
 
-![11](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/e87fd1b5-eac1-449b-ba96-4993862d6fb1)
+![](assets/percobaan3.png)
 - Percobaan 4
 
-![12](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/d837d67d-340f-4246-a6b1-82efadc0e980)
+![](assets/percobaan4.png)
 - Percobaan 5
 ```sh
 $ iops64 1
@@ -189,7 +189,7 @@ $ flops64 1
 Keterangan : 1 = Jumlah CPU VM Debian
 
 - Hasil perbandingan IOPS dan FLOPS dengan teman
-![iops-flops](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/89b9a4f5-f21f-4ecd-8a32-ef1b00aa2ef8)
+![](assets/hasil.png)
 
 - Analisa hasil percobaan dan kesimpulan IOPS dan FLOPS
    - Iops mengukur jumlah integer yang dapat dilakukan oleh sistem dalam satu detik
