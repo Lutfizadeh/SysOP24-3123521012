@@ -1,6 +1,6 @@
 # Tugas 4
 ## Presentasi Langkah Demi Langkah Tentang Siklus CPU (Fetch, Decode, Execute)
-![awal](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/c63c4ab1-69cd-4570-b721-fabc354def43)
+![](assets/inisialisasiawal.jpg)
 - Inisialisasi awal
 
 1. Proses 1
