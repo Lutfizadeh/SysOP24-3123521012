@@ -23,12 +23,12 @@
       $ ps untuk mendeskripsikan file
       ```
       2)	Output ke layar (standar output), input dari keyboard (standard input)
-      ![2](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/e0c22f3e-fad9-47a2-beb1-60626da6c4a3)
+      ![](assets/percobaan/2.png)
       ```
       $ cat untuk menulis pesan
       ```
       3)	Input nama direktori, output tidak ada (membuat direktori baru), bila terjadi error maka tampilan error pada layar (standard error)
-      ![3](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/cd0760f2-538e-40ba-a3b7-ef48881d7591)
+      ![](assets/percobaan/3.png)
 
       ```
       $ mkdir untuk membuat direktori/folder baru
@@ -36,66 +36,66 @@
 
 2.	Percobaan 2 : Pembelokan (redirection)
       1)	Pembelokan standar output
-      ![4](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/9d281eab-78ac-4342-bc04-87e6514bef10)
+      ![](assets/percobaan/4.png)
       ```
       $ cat 1> (nama file) untuk mengisi file
       ```
       2)	Pembelokan standar input, yaitu input dibelokkan dari keyboard menjadi dari file
-      ![5](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/9aa2cb9d-29fd-43e0-9b4f-83fd079aeafe)
+      ![](assets/percobaan/5.png)
       ```
       $ cat 0< (nama file) atau cat (nama file) untuk melihat isi file
       ```
       3)	Pembelokkan standar error untuk disimpan di file
-      ![6](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/42afa425-5d8d-42e0-b817-77bdb402a2e3)
+      ![](assets/percobaan/6.png)
       ```
       $ mkdir (nama direktori yang sudah ada) 2> (nama file) untuk menampilkan error
       ```
       4)	Notasi 2>&1 : pembelokan standar error (2>) adalah identik dengan file descriptor 1
-      ![7](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/07c1b2f8-b7f1-4f64-911c-244d7b1ddca8)
+      ![](assets/percobaan/7.png)
       ```
       Notasi 2>&1 = 2> untuk pembelokan standar error
       ```
       5)	Notasi 1>&2 (atau >&2) : pembelokan standar output adalah sama dengan file descriptor 2 yaitu standar error
-      ![8](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/ba589e4d-a5c3-43ca-9be5-f93f4ab35667)
+      ![](assets/percobaan/8.png)
       ```
       Notasi 1>&2 = &2 untuk pembelokan standar error
       ```
       6)	Notasi >> (append)
-      ![9](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/cad39dd3-3ddd-4723-bccd-aa77f309238b)
+      ![](assets/percobaan/9.png)
       ```
       Notasi > untuk mengisi file, notasi >> untuk menambahkan isi file
       ```
       7)	Notasi here document (<<++ .... ++) digunakan sebagai pembatas input dari keyboard. Perhatikan bahwa tanda pembatas dapat digantikan dengan tanda apa saja, namun harus sama dan tanda penutup            harus diberikan pada awal baris
-      ![10](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/6a69b8c9-bd6d-47ca-b51b-374b964dc5d1)
+      ![](assets/percobaan/10.png)
       ```
       $ cat <<++ diakhiri ++ = $ cat <<%%% diakhiri %%% untuk menulis beberapa baris tulisan
       ```
       8)	Notasi – (input keyboard) adalah representan input dari keyboard. Artinya menampilkan file 1, kemudian menampilkan input dari keyboard dan menampilkan file 2. Perhatikan bahwa notasi “-“ berarti        menyelipkan input dari keyboard
-      ![11](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/e20ca610-a55f-4783-9627-35e13573ba31)
+      ![](assets/percobaan/11.png)
       ```
       Notasi – untuk menampilkan file
       ```
 
 3.	Percobaan 3 : Pipa (pipeline)
       1)	Operator pipa (|) digunakan untuk membuat eksekusi proses dengan melewati data langsung ke data lainnya.
-      ![12](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/33786e35-4388-45b5-a428-1e929772da7c)
-      ![13](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/8b2fa534-b468-4f0d-afc8-5507ebb0d033)
+      ![](assets/percobaan/12.png)
+      ![](assets/percobaan/13.png)
       ```
       Operator | untuk mengeksekusi proses dengan melewati data langsung ke data lainnya (Tidak semua hasil dicapture)
       ```
       2) Untuk membelokkan standart output ke file, digunakan operator ">"
-      ![14](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/c4289ad9-6df2-4217-b403-80ce75c22d8a)
+      ![](assets/percobaan/14.png)
       3) Untuk menambahkan output ke file digunakan operator ">>"
-      ![15](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/b65f8a8c-ce5d-405f-9206-fce075151423)
+      ![](assets/percobaan/15.png)
       4) Untuk membelokkan standart input digunakan operator "<"
-      ![16](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/14949b1c-2d0d-42b8-bf4d-6c05780f15e6)
+      ![](assets/percobaan/16.png)
       5) Pembelokan standart input dan standart output dapat dikombinasikan tetapi tidak boleh menggunakan nama file yang sama sebagai standart input dan output.
-      ![17](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/87ac8238-2573-4e7e-a84e-ddb57bc6cea4)
+      ![](assets/percobaan/17.png)
 
 4.	Percobaan 4 : Filter
       1)	Pipa juga digunakan untuk mengkombinasikan utilitas sistem untuk membentuk fungsi yang lebih kompleks
-      ![18](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/b5e074a8-15ae-4c72-92cf-0c8c9dd83817)
-      ![19](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/871db444-fa56-4104-b49b-49f908a3e653)
+      ![](assets/percobaan/18.png)
+      ![](assets/percobaan/19.png)
       ```
       Operator | bisa dikombinsikan untuk membuat fungsi lebih kompleks (Ini adalah percobaan kedua, karena yang pertama ada kesalahan penulisan  data)
       ```
