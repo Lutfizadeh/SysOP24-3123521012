@@ -18,7 +18,7 @@
 ## Percobaan
 1.	Percobaan 1 : File descriptor
       1)	Output ke layar (standar output), input dari system (kernel)
-      ![1](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/974a67e5-cd13-4c46-b66e-40c607b54fab)
+      ![](assets/percobaan/1.png)
       ```
       $ ps untuk mendeskripsikan file
       ```
