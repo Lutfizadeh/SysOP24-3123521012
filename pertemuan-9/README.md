@@ -131,7 +131,7 @@ $ login [username]
    - Tekan ```Ctrl + C``` untuk menghentikan prosesnya
    
    - Hasil
-   ![](assets/fork1.png)
+   ![](assets/fork2.png)
 
 ## Orphan dan Zombie
 1. Orphan
