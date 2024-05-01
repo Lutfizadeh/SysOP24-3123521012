@@ -102,23 +102,23 @@
 
 ## Latihan
 1.	Lihat daftar secara lengkap pada direktori aktif, belokkan tampilan standar output ke file baru.
-![20](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/327669ac-eb7d-40c9-ae8b-19a78de084d4)
+![](assets/latihan/1.png)
 
 2.	Lihat daftar secara lengkap pada direktori /etc/passwd, belokkan tampilan standar output ke file baru tanpa menghapus file baru sebelumnya.
-![21](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/31db456f-3a3c-4c8e-a144-c9a810c8ec43)
+![](assets/latihan/2.png)
 
 3.	Urutkan file baru dengan cara membelokkan standar input.
-![22](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/3b587231-2bea-4bf7-b38a-8001750f86e4)
+![](assets/latihan/3.png)
 
 4.	Urutkan file baru dengan cara membelokkan standar input dan standar output ke file baru.urut.
-![23](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/4a9fe48d-86e6-440c-807c-809461bed2e3)
-![24](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/5c00c1e7-175a-4212-b469-d113738eea82)
-![25](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/8bade487-616e-4199-bd8d-bd6c2f302172)
-![26](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/e5758fd7-cc9b-4ce2-accc-7082f54934fd)
-![27](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/aa8e5463-bc14-4a4d-9a59-c5bd1df54e79)
+![](assets/latihan/4.png)
+![](assets/latihan/5.png)
+![](assets/latihan/6.png)
+![](assets/latihan/7.png)
+![](assets/latihan/8.png)
 
-5.	Buatlah direktori latihan 2 sebanyak 2 kali dan belokkan standar error ke file rmdirerror.txt.
-![28](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/6d72710a-033e-4db4-b70a-486210fe0098)
+6.	Buatlah direktori latihan 2 sebanyak 2 kali dan belokkan standar error ke file rmdirerror.txt.
+![](assets/latihan/9.png)
 Notasi 2> untuk pembelokan standar error
 
 7.	Urutkan kalimat berikut:
@@ -131,11 +131,11 @@ Palembang
 Lampung
 ```
 Dengan menggunakan notasi here document (<@@@ ...@@@)
-![29](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/af9a2dae-6693-4868-bbc1-779ee506191d)
+![](assets/latihan/10.png)
 Kombinasi here document **<<@@@ ...@@@** dan **| sort** menghasilkan output dengan abjad yang urut
 
 7.	Hitung jumlah baris, kata, dan karakter dari file baru.urut dengan menggunakan filter dan tambahkan data tersebut ke file baru.
-![30](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/943f4359-fc64-404f-a28c-fbf5f5702bdf)
+![](assets/latihan/11.png)
 Kombinasi antara | wc dan notasi > untuk memasukkan data jumlah baris, kata, dan karakter ke file lain
 8.	Gunakan perintah di bawah ini dan perhatikan hasilnya.
 ```
@@ -150,5 +150,5 @@ dog duck
 $ cat hello.txt | sort | uniq
 $ cat hello.txt | grep “dog” | grep -v “cat”
 ```
-![31](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/ac2ea3b1-0d70-40d7-ac18-2805f2f98f6c)
+![](assets/latihan/12.png)
 Command ini berisi pemasukan data ke file hello.txt yang kemudian diurutkan dan menampilkan data, yang mengandung kata “dog”, tetapi tidak mengandung kata “cat”
