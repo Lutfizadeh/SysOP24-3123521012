@@ -16,7 +16,7 @@
 
 ## Fork
 Sebelum melakukan fork serta menjalankan orphan dan zombie, kita harus menginstall g++ dahulu.
-![1](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/f50d3e7e-6720-4346-8b13-a95f7adf89d6)
+![](assets/root.png)
 ```
 $ su root
 $ sudo apt update
@@ -25,7 +25,7 @@ $ sudo apt instal g++
 ```
 
 Kemudian login kembali sebagai user
-![2](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/8ca8bc3e-a53d-4063-b161-f8d4f639f39f)
+![](assets/login.png)
 ```
 $ login [username]
 ```
@@ -80,7 +80,7 @@ $ login [username]
    ```
    
    - Hasil :
-   ![3](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/48c28108-9f83-4660-b37c-81c4356971a6)
+   ![](assets/fork1.png)
 
 2. Fork 2
    - Masuk ke compiler
@@ -131,8 +131,7 @@ $ login [username]
    - Tekan ```Ctrl + C``` untuk menghentikan prosesnya
    
    - Hasil
-   ![4](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/be62a078-0a63-4bd7-81b5-1db58ddc0177)
-
+   ![](assets/fork1.png)
 
 ## Orphan dan Zombie
 1. Orphan
@@ -202,7 +201,7 @@ $ login [username]
    - Tekan ```Ctrl + C``` untuk menghentikan prosesnya
    
    - Hasil
-   ![5](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/b8dba801-5cfb-437f-afcd-ed9024edb78f)
+   ![](assets/orphan.png)
 
 2. Zombie
    - Masuk ke compiler
@@ -252,7 +251,7 @@ $ login [username]
    - Tekan ```Ctrl + C``` untuk menghentikan prosesnya
    
    - Hasil
-   ![6](https://github.com/Lutfizadeh/SysOP24-3123521012/assets/67014058/14b0dc30-88aa-4ef6-b189-8f7d3390258a)
+   ![](assets/zombie.png)
    
 
 ## Producer Consumer Problem
