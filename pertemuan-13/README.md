@@ -1,5 +1,5 @@
 # Tugas 11
-## Perbedaan Concurrent Parallel, dan Concurrent Parallel
+## Perbedaan Concurrent, Parallel, dan Concurrent Parallel
 Secara sederhana:
 - Concurrent: Beberapa tugas berjalan pada waktu yang bersamaan, tetapi mungkin tidak secara benar-benar serentak. Mereka bisa bergantian dijalankan, dan sistem mengalihkan perhatian dari satu tugas ke yang lain.
   - Contoh: Mengerjakan beberapa tugas dalam satu waktu, seperti menulis email sambil mendengarkan musik. Anda tidak melakukan keduanya secara persis pada saat yang sama, tetapi bergantian di antara mereka.
